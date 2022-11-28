@@ -6,7 +6,7 @@ Public situation specifically Sexual Harassment. The first thing that we will co
 The main point of this application is to educate and inform people as well as facilitate support for those people who are not able to Report cases of sexual harassment and protect victims from certain laws or culture in certain countries that might be disadvantageous to the victim. This application also creates a community to help boost digitalization and build non-governmental innovation.
 
 ## Link to releasable app
-<!-- TODO -->
+https://github.com/azzuhripasaribu/PBD-Final-Project/releases/tag/v0.1.0
 ## List of modules
 
 - Authentication (Login, Logout, Make an Account)
