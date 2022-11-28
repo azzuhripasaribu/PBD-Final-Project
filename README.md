@@ -26,4 +26,9 @@ https://github.com/azzuhripasaribu/PBD-Final-Project/releases/tag/v0.1.0
 
 ## Integration Flow
 <!-- TODO -->
-## How to Build, Run and Deploy
+## How to Build, Run and Deploy 
+A release containing an APK file is automatically created whenever a branch is merged with main.
+
+to locally run the app:
+1. clone this repo
+2. execute ```flutter run```

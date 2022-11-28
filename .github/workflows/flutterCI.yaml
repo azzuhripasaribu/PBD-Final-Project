@@ -1,4 +1,4 @@
-name: Flutter CI
+name: Flutter CI CD
 
 on:
   push:
@@ -37,3 +37,12 @@ jobs:
         with:
           name: release-apk
           path: build/app/outputs/apk/release/app-release.apk
+      - name: create github release
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            build/app/outputs/apk/release/app-release.apk
