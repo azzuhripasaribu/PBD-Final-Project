@@ -25,7 +25,12 @@ https://github.com/azzuhripasaribu/PBD-Final-Project/releases/tag/latest
 - Linnea Alija Khan= Navbar, About us
 
 ## Integration Flow
-<!-- TODO -->
+- Use the json data of the midterm’s project application to make the model for flutter’s application in Quicktype.
+- Implement the model in flutter so it would work parallel to the django project.
+- Make a function in flutter so it would fetch the json data from the django’s database.
+- Create the required widgets so it would return the preferred display.
+
+
 ## How to Build, Run and Deploy 
 A release containing an APK file is automatically created whenever a branch is merged with main.
 
