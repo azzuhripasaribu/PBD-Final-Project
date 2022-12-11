@@ -1,5 +1,6 @@
 import 'package:final_project/main.dart';
 import 'package:flutter/material.dart';
+import 'package:final_project/page/education.dart';
 
 Drawer myDrawer(context){
   return Drawer(
@@ -14,6 +15,15 @@ Drawer myDrawer(context){
               MaterialPageRoute(builder: (context) => const MyHomePage())
             );
           }
+        ),
+        ListTile(
+            title: const Text('Know More'),
+            onTap: () {
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) =>  EducationPage())
+              );
+            }
         ),
       ],
     ),
