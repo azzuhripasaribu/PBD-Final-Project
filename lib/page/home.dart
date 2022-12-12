@@ -71,8 +71,8 @@ class _HomePageState extends State<HomePage> {
                       Text(
                         "Hello,",
                         style: TextStyle(
-                          color: Colors.black54,
-                          fontSize: 16,
+                          color: Color.fromARGB(137, 73, 73, 73),
+                          fontSize: 20,
                         ),
                       ),
                       SizedBox(
@@ -81,9 +81,9 @@ class _HomePageState extends State<HomePage> {
                       Text(
                         "FirstName LastName",
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Color.fromARGB(255, 226, 77, 124),
                           fontWeight: FontWeight.bold,
-                          fontSize: 20,
+                          fontSize: 25,
                         ),
                       )
                     ],
@@ -171,6 +171,7 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ),
+        
       ),
     );
   }
