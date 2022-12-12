@@ -2,6 +2,8 @@ import 'package:final_project/page/start.dart';
 import 'package:final_project/page/centers.dart';
 import 'package:flutter/material.dart';
 import 'package:final_project/page/login_page.dart';
+import 'package:final_project/page/education.dart';
+import 'package:final_project/page/blog.dart';
 import 'package:pbp_django_auth/pbp_django_auth.dart';
 import 'package:provider/provider.dart';
 
@@ -49,6 +51,24 @@ Drawer myDrawer(BuildContext context){
             );
           }
         ),
+        ListTile(
+            title: const Text('Know More'),
+            onTap: () {
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) =>  EducationPage())
+              );
+            }
+        ),
+        ListTile(
+          title: const Text("Blog"),
+          onTap: () {
+            Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => MyBlogPage())
+            );
+          },
+        )
       ],
     ),
   );
