@@ -4,14 +4,14 @@ import 'package:final_project/fetch/Blog.dart';
 import 'package:final_project/page/blog_detail.dart';
 import 'drawer.dart';
 
-class MyWatchListPage extends StatefulWidget {
-  const MyWatchListPage({Key? key}) : super(key: key);
+class MyBlogPage extends StatefulWidget {
+  const MyBlogPage({Key? key}) : super(key: key);
 
   @override
-  MyWatchListPageState createState() => MyWatchListPageState();
+  MyBlogPageState createState() => MyBlogPageState();
 }
 
-class MyWatchListPageState extends State<MyWatchListPage> {
+class MyBlogPageState extends State<MyBlogPage> {
   late Future<List<Blog>> myBlog;
 
   @override
@@ -24,7 +24,7 @@ class MyWatchListPageState extends State<MyWatchListPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('My Watch List'),
+          title: const Text('Blog'),
         ),
         drawer: myDrawer(context),
         body: FutureBuilder(
@@ -56,50 +56,40 @@ class MyWatchListPageState extends State<MyWatchListPage> {
                                     myBlog: snapshot.data![index])),
                           );
                         },
-                        child: Container(
-                          margin: const EdgeInsets.symmetric(
-                              horizontal: 16, vertical: 12),
-                          padding: const EdgeInsets.all(20.0),
-                          decoration: BoxDecoration(
-                              border: Border.all(
-                                  width: 1,
-                                  color: ((snapshot
-                                      .data![index].fields.watched)
-                                      ? Colors.green
-                                      : Colors.red)),
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(15.0),
-                              boxShadow: const [
-                                BoxShadow(
-                                    color: Colors.grey, blurRadius: 0.5)
-                              ]),
-                          child: Row(
-                            children: [
-                              Expanded(
-                                child: Text(
-                                  "${snapshot.data![index].fields.title}",
-                                  style: const TextStyle(
-                                    fontSize: 18.0,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "${snapshot.data![index].fields.title}",
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold
                               ),
-                              SizedBox(
-                                width: 30,
-                                child: CheckboxListTile(
-                                    value: snapshot
-                                        .data![index].fields.watched,
-                                    onChanged: (bool? value) {
-                                      setState(() {
-                                        snapshot.data![index].fields
-                                            .watched =
-                                        !snapshot.data![index].fields
-                                            .watched;
-                                      });
-                                    }),
-                              )
-                            ],
-                          ),
+                            ),
+                            SizedBox(height: 8),
+                            Text(
+                              "${snapshot.data![index].fields.author}",
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold
+                              ),
+                            ),
+                            SizedBox(height: 8),
+                            Text(
+                              "${snapshot.data![index].fields.createdOn}",
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold
+                              ),
+                            ),
+                            SizedBox(height: 8),
+                            Text(
+                              "${snapshot.data![index].fields.content}",
+                              style: TextStyle(
+                                  fontSize: 10
+                              ),
+                            ),
+                          ],
                         ),
                       ));
                 }

@@ -80,7 +80,7 @@ class _BlogPageState extends State<BlogPage> {
                     onPressed: () {
                     Navigator.pushReplacement(
                       context, MaterialPageRoute(
-                        builder: (context) => MyWatchListPage())
+                        builder: (context) => MyBlogPage())
                     );
                 },
                     child: const SizedBox(

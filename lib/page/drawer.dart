@@ -31,7 +31,7 @@ Drawer myDrawer(context){
           onTap: () {
             Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(builder: (context) => MyWatchListPage())
+                MaterialPageRoute(builder: (context) => MyBlogPage())
             );
           },
         )
