@@ -1,4 +1,4 @@
-import 'package:final_project/main.dart';
+import 'package:final_project/page/start.dart';
 import 'package:final_project/page/centers.dart';
 import 'package:flutter/material.dart';
 import 'package:final_project/page/login_page.dart';
@@ -16,7 +16,36 @@ Drawer myDrawer(BuildContext context){
           onTap: () {
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (context) => const MyHomePage())
+              MaterialPageRoute(builder: (context) => const StartPage())
+            );
+          }
+        ),
+        request.loggedIn? 
+        ListTile(
+          title: Text('logout'),
+          onTap: () {
+            request.loggedIn = false;
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => const StartPage())
+            );
+          },
+        ):
+        ListTile(
+          title: const Text('login'),
+          onTap: () {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => const LoginPage())
+            );
+          }
+        ),
+        ListTile(
+          title: const Text('Find Centers'),
+          onTap: () {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => const FindCentersPage())
             );
           }
         ),
