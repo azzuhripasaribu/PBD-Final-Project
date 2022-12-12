@@ -100,7 +100,7 @@ class _HomePageState extends State<HomePage> {
                   vertical: 16,
                 ),
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 255, 255, 255),
+                  color: const Color.fromARGB(255, 255, 255, 255),
                   borderRadius: BorderRadius.circular(16),
                 ),
                 child: Row(

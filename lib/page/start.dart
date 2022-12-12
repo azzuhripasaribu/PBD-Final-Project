@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_string_escapes
+
 import 'package:flutter/material.dart';
 import 'home.dart';
 
@@ -13,7 +15,7 @@ class _StartPageState extends State<StartPage> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color.fromARGB(255, 255, 214, 220),
       body: SafeArea(
         child: Column(
           children: [
@@ -26,7 +28,7 @@ class _StartPageState extends State<StartPage> {
                 horizontal: 16,
               ),
               child: Image.asset(
-                "assets/start.jpg",
+                "images/start.jpg",
                 // height: 50,
               ),
             ),
@@ -72,7 +74,7 @@ class _StartPageState extends State<StartPage> {
                     child: Container(
                       height: 56,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 226, 77, 124),
+                        color: const Color.fromARGB(255, 226, 77, 124),
                         borderRadius: BorderRadius.circular(16),
                       ),
                       child: const Center(
