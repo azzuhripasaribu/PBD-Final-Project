@@ -20,12 +20,12 @@ class _StartPageState extends State<StartPage> {
         child: Column(
           children: [
             const SizedBox(
-              height: 16,
+              height: 12,
             ),
             Container(
               height: size.height / 1.8,
               padding: const EdgeInsets.symmetric(
-                horizontal: 16,
+                horizontal: 9,
               ),
               child: Image.asset(
                 "images/start.jpg",
@@ -33,7 +33,7 @@ class _StartPageState extends State<StartPage> {
               ),
             ),
             const SizedBox(
-              height: 16,
+              height: 10,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),

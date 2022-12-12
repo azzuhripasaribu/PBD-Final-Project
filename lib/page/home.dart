@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/doctor_item.dart';
-import '../widgets/specialist_item.dart';
-
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -72,7 +69,7 @@ class _HomePageState extends State<HomePage> {
                         height: 4,
                       ),
                       Text(
-                        "Pesulap Merah",
+                        "FirstName LastName",
                         style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
@@ -86,7 +83,7 @@ class _HomePageState extends State<HomePage> {
                     backgroundColor: Colors.grey,
                     child: CircleAvatar(
                       radius: 28,
-                      backgroundImage: AssetImage("assets/pm.png"),
+                      backgroundImage: AssetImage("images/pm.jpg"),
                     ),
                   )
                 ],
@@ -100,26 +97,26 @@ class _HomePageState extends State<HomePage> {
                   vertical: 16,
                 ),
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 255, 255, 255),
+                  color: const Color.fromARGB(255, 255, 214, 220),
                   borderRadius: BorderRadius.circular(16),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Image.asset(
-                      "assets/surgeon.png",
-                      width: 92,
+                      "images/report.jpg",
+                      width: 80,
                       height: 100,
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
-                          "How do you feel?",
+                          "Are you a Victim?",
                           style: TextStyle(
-                              color: Colors.black87,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold),
+                              color: Color.fromARGB(255, 226, 77, 124),
+                              fontSize: 25,
+                              fontWeight: FontWeight.w900),
                         ),
                         const SizedBox(
                           height: 4,
@@ -127,7 +124,7 @@ class _HomePageState extends State<HomePage> {
                         const SizedBox(
                           width: 120,
                           child: Text(
-                            "Fill out your medical right now",
+                            "Report immediately!",
                             style: TextStyle(
                               color: Colors.black87,
                               fontSize: 12,
@@ -142,11 +139,11 @@ class _HomePageState extends State<HomePage> {
                           height: 35,
                           padding: const EdgeInsets.all(8.0),
                           decoration: BoxDecoration(
-                              color: Colors.blueAccent,
+                              color: const Color.fromARGB(255, 226, 77, 124),
                               borderRadius: BorderRadius.circular(12.0)),
                           child: const Center(
                             child: Text(
-                              "Get Started",
+                              "Report",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w400,
@@ -160,123 +157,6 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-              const SizedBox(height: 20),
-              Container(
-                padding: const EdgeInsets.only(left: 16),
-                height: 64,
-                decoration: BoxDecoration(
-                  color: const Color.fromARGB(95, 179, 173, 173),
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                child: Row(
-                  children: const [
-                    Icon(
-                      Icons.search,
-                      size: 32,
-                      color: Colors.black54,
-                    ),
-                    SizedBox(
-                      width: 12,
-                    ),
-                    Text(
-                      "How can we help you?",
-                      style: TextStyle(
-                        color: Colors.black54,
-                      ),
-                    )
-                  ],
-                ),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              SizedBox(
-                height: 60,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: const [
-                    SpecialistItem(
-                      imagePath: "assets/clean.png",
-                      imageName: "Dentist",
-                    ),
-                    SizedBox(
-                      width: 8,
-                    ),
-                    SpecialistItem(
-                      imagePath: "assets/knife.png",
-                      imageName: "Surgeon",
-                    ),
-                    SizedBox(
-                      width: 8,
-                    ),
-                    SpecialistItem(
-                      imagePath: "assets/lungs.png",
-                      imageName: "Therapy",
-                    ),
-                    SizedBox(
-                      width: 8,
-                    ),
-                    SpecialistItem(
-                      imagePath: "assets/hormones.png",
-                      imageName: "Physiologist",
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Text(
-                    "Doctor list",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16,
-                    ),
-                  ),
-                  Text(
-                    "See all",
-                    style: TextStyle(
-                      color: Colors.black45,
-                      fontSize: 16,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              SizedBox(
-                height: 200,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: const [
-                    DoctorItem(
-                      image: "assets/1.png",
-                      name: "Nycta Gina",
-                      specialist: "Pediatrician",
-                    ),
-                    DoctorItem(
-                      image: "assets/3.png",
-                      name: "Reisa Broto Asmoro",
-                      specialist: "Surgeon",
-                    ),
-                    DoctorItem(
-                      image: "assets/2.png",
-                      name: "Indah Kusumaningrum",
-                      specialist: "Odontologist",
-                    ),
-                    DoctorItem(
-                      image: "assets/4.png",
-                      name: "Mesty Ariotedjo",
-                      specialist: "Ophtamologist",
-                    ),
-                  ],
-                ),
-              )
             ],
           ),
         ),
