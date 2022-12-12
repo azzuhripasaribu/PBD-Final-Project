@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -9,6 +8,16 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
+  final List<String> imgList = [
+  'images/1.png'
+  'images/2.png'
+  'images/3.png'
+  'images/4.png'
+  'images/5.png'
+  'images/6.png'
+];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -154,6 +163,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ],
+                      
                     ),
                   ],
                 ),
