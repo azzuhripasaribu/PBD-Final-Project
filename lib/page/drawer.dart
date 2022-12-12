@@ -1,4 +1,3 @@
-import 'package:final_project/main.dart';
 import 'package:final_project/page/start.dart';
 import 'package:flutter/material.dart';
 
