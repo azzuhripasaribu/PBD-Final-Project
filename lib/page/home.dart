@@ -12,7 +12,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
 
-    final List<String> imgList = [
+    final List<String> listItem = [
       'images/1.png'
       'images/2.png'
       'images/3.png'
@@ -20,6 +20,7 @@ class _HomePageState extends State<HomePage> {
       'images/5.png'
       'images/6.png'
     ];
+
     return Scaffold(
       backgroundColor: Colors.white,
       bottomNavigationBar: BottomNavigationBar(
@@ -173,7 +174,7 @@ class _HomePageState extends State<HomePage> {
                   crossAxisCount: 2,
                   crossAxisSpacing: 10,
                   mainAxisSpacing: 10,
-                  children: imgList.map((item) => Card(
+                  children: listItem.map((item) => Card(
                     color: Colors.transparent,
                     elevation: 0,
                     child: Container(
@@ -185,14 +186,13 @@ class _HomePageState extends State<HomePage> {
                         )
                       ),
                       child: Transform.translate(
-                        offset: Offset(50, -50),
+                        offset: const Offset(50, -50),
                         child: Container(
-                          margin: EdgeInsets.symmetric(horizontal: 65, vertical: 63),
+                          margin: const EdgeInsets.symmetric(horizontal: 65, vertical: 63),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             color: Colors.white
                           ),
-                          child: Icon(Icons.bookmark_border, size: 15,),
                         ),
                       ),
                     ),
