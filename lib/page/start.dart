@@ -41,11 +41,11 @@ class _StartPageState extends State<StartPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
-                    "We here to help you",
+                    "Consent Beacon here to help you",
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Color.fromARGB(255, 226, 77, 124),
                       fontWeight: FontWeight.bold,
-                      fontSize: 24,
+                      fontSize: 29,
                     ),
                   ),
                   const SizedBox(
@@ -56,10 +56,10 @@ class _StartPageState extends State<StartPage> {
                       right: 100,
                     ),
                     child: Text(
-                      "Find your help by reporting your problem",
+                      "Find your help by reporting your concern",
                       style: TextStyle(
-                        color: Colors.black38,
-                        fontSize: 15,
+                        color: Color.fromARGB(95, 0, 0, 0),
+                        fontSize: 16,
                       ),
                     ),
                   ),
