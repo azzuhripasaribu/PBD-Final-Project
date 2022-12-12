@@ -20,7 +20,7 @@ https://github.com/azzuhripasaribu/PBD-Final-Project/releases/tag/latest
 ## User Roles
 - Azzuhri Nauli Pasaribu = Authentication, Find Center
 - Dhiwa Arya Kusumah = Article
-- Muhammad Fiqo Anugrah = Flip card, Landing Page, Contact Form
+- Muhammad Fiqo Anugrah = Info card, Landing Page, Contact Page
 - Julian Justin = Report Form
 - Linnea Alija Khan= Navbar, About us
 

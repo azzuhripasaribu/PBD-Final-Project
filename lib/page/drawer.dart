@@ -1,4 +1,5 @@
 import 'package:final_project/main.dart';
+import 'package:final_project/page/centers.dart';
 import 'package:flutter/material.dart';
 import 'package:final_project/page/login_page.dart';
 import 'package:pbp_django_auth/pbp_django_auth.dart';
@@ -39,7 +40,15 @@ Drawer myDrawer(BuildContext context){
             );
           }
         ),
-        
+        ListTile(
+          title: const Text('Find Centers'),
+          onTap: () {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => const FindCentersPage())
+            );
+          }
+        ),
       ],
     ),
   );
