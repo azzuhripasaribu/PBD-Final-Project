@@ -73,7 +73,7 @@ class EducationPage extends StatelessWidget {
         ),
       ),
       Container(
-        margin: EdgeInsets.only(left: 20, right: 20, bottom: 20),
+        margin: EdgeInsets.only(left: 20, right: 20, bottom: 20, top: 20),
         child: Text(
           '1. Verbal sexual harassment',
           style: TextStyle(

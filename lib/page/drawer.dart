@@ -1,4 +1,5 @@
 import 'package:final_project/main.dart';
+import 'package:final_project/page/blog.dart';
 import 'package:flutter/material.dart';
 import 'package:final_project/page/education.dart';
 
@@ -25,6 +26,15 @@ Drawer myDrawer(context){
               );
             }
         ),
+        ListTile(
+          title: const Text("Blog"),
+          onTap: () {
+            Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => MyWatchListPage())
+            );
+          },
+        )
       ],
     ),
   );
