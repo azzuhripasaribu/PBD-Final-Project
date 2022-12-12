@@ -49,35 +49,6 @@ Drawer myDrawer(BuildContext context){
             );
           }
         ),
-        request.loggedIn? 
-        ListTile(
-          title: Text('logout'),
-          onTap: () {
-            request.loggedIn = false;
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => const MyHomePage())
-            );
-          },
-        ):
-        ListTile(
-          title: const Text('login'),
-          onTap: () {
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => const LoginPage())
-            );
-          }
-        ),
-        ListTile(
-          title: const Text('Find Centers'),
-          onTap: () {
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => const FindCentersPage())
-            );
-          }
-        ),
       ],
     ),
   );

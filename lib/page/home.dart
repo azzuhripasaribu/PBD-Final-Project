@@ -1,7 +1,10 @@
+import 'package:final_project/page/drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
+
+  final String title = "Home Page";
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -22,6 +25,11 @@ class _HomePageState extends State<HomePage> {
     ];
 
     return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+        backgroundColor: Color.fromARGB(255, 226, 77, 124),
+      ),
+      drawer: myDrawer(context),
       backgroundColor: Colors.white,
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,

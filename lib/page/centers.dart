@@ -46,6 +46,7 @@ class _FindCentersPageState extends State<FindCentersPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Find Centers'),
+        backgroundColor: Color.fromARGB(255, 226, 77, 124),
       ),
       drawer: myDrawer(context),
       backgroundColor: const Color.fromARGB(255, 217, 217, 217),

@@ -34,6 +34,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Login'),
+        backgroundColor: Color.fromARGB(255, 226, 77, 124),
       ),
       drawer: myDrawer(context),
       body:Column(
