@@ -9,17 +9,17 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  final List<String> imgList = [
-  'images/1.png'
-  'images/2.png'
-  'images/3.png'
-  'images/4.png'
-  'images/5.png'
-  'images/6.png'
-];
-
   @override
   Widget build(BuildContext context) {
+
+    final List<String> imgList = [
+      'images/1.png'
+      'images/2.png'
+      'images/3.png'
+      'images/4.png'
+      'images/5.png'
+      'images/6.png'
+    ];
     return Scaffold(
       backgroundColor: Colors.white,
       bottomNavigationBar: BottomNavigationBar(
@@ -173,7 +173,7 @@ class _HomePageState extends State<HomePage> {
                   crossAxisCount: 2,
                   crossAxisSpacing: 10,
                   mainAxisSpacing: 10,
-                  children: _listItem.map((item) => Card(
+                  children: imgList.map((item) => Card(
                     color: Colors.transparent,
                     elevation: 0,
                     child: Container(
@@ -193,13 +193,15 @@ class _HomePageState extends State<HomePage> {
                             color: Colors.white
                           ),
                           child: Icon(Icons.bookmark_border, size: 15,),
-                        ), 
-              
+                        ),
+                      ),
+                    ),
+                  )).toList(),
+                )
               )
             ],
           ),
         ),
-        
       ),
     );
   }
