@@ -9,7 +9,7 @@ class BlogPage extends StatefulWidget {
   const BlogPage({
     super.key, required this.myBlog
 });
-  final Post myBlog;
+  final Blog myBlog;
 
   @override
   State<BlogPage> createState() => _BlogPageState();

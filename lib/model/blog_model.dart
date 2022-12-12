@@ -4,28 +4,12 @@
 
 import 'dart:convert';
 
-Blog blogFromJson(String str) => Blog.fromJson(json.decode(str));
+List<Blog> blogFromJson(String str) => List<Blog>.from(json.decode(str).map((x) => Blog.fromJson(x)));
 
-String blogToJson(Blog data) => json.encode(data.toJson());
+String blogToJson(List<Blog> data) => json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class Blog {
   Blog({
-    required this.post,
-  });
-
-  List<Post> post;
-
-  factory Blog.fromJson(Map<String, dynamic> json) => Blog(
-    post: List<Post>.from(json["post"].map((x) => Post.fromJson(x))),
-  );
-
-  Map<String, dynamic> toJson() => {
-    "post": List<dynamic>.from(post.map((x) => x.toJson())),
-  };
-}
-
-class Post {
-  Post({
     required this.model,
     required this.pk,
     required this.fields,
@@ -35,7 +19,7 @@ class Post {
   int pk;
   Fields fields;
 
-  factory Post.fromJson(Map<String, dynamic> json) => Post(
+  factory Blog.fromJson(Map<String, dynamic> json) => Blog(
     model: json["model"],
     pk: json["pk"],
     fields: Fields.fromJson(json["fields"]),
