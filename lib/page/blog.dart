@@ -79,16 +79,16 @@ class MyBlogPageState extends State<MyBlogPage> {
                               "${snapshot.data![index].fields.createdOn}",
                               style: TextStyle(
                                   fontSize: 15,
-                                  fontWeight: FontWeight.bold
+                                  fontWeight: FontWeight.bold,
                               ),
                             ),
                             SizedBox(height: 8),
-                            Text(
-                              "${snapshot.data![index].fields.content}",
-                              style: TextStyle(
-                                  fontSize: 10
-                              ),
-                            ),
+                            // Text(
+                            //   "${snapshot.data![index].fields.content}",
+                            //   style: TextStyle(
+                            //       fontSize: 10
+                            //   ),
+                            // ),
                           ],
                         ),
                       ));

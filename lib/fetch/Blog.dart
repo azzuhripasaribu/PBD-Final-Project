@@ -4,7 +4,7 @@ import 'dart:convert';
 
 Future<List<Blog>> fetchBlog() async {
   var url =
-  Uri.parse('http://localhost:8000/article/json/'); //I'm using localhost because the slug field are ruining the json response
+  Uri.parse('https://midterm-project-pbp.up.railway.app/article/json/');
   var response = await http.get(
     url,
     headers: {
