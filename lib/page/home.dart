@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -80,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   const CircleAvatar(
                     radius: 30,
-                    backgroundColor: Colors.grey,
+                    backgroundColor: Color.fromARGB(255, 226, 77, 124),
                     child: CircleAvatar(
                       radius: 28,
                       backgroundImage: AssetImage("images/pm.jpg"),
@@ -153,6 +154,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ],
+                      
                     ),
                   ],
                 ),
