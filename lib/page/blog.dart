@@ -25,6 +25,7 @@ class MyBlogPageState extends State<MyBlogPage> {
     return Scaffold(
         appBar: AppBar(
           title: const Text('Blog'),
+          backgroundColor: Color.fromARGB(255, 226, 77, 124),
         ),
         drawer: myDrawer(context),
         body: FutureBuilder(
@@ -46,6 +47,7 @@ class MyBlogPageState extends State<MyBlogPage> {
                   );
                 } else {
                   return ListView.builder(
+                    padding: EdgeInsets.all(20),
                       itemCount: snapshot.data!.length,
                       itemBuilder: (_, index) => GestureDetector(
                         onTap: () {
@@ -66,14 +68,14 @@ class MyBlogPageState extends State<MyBlogPage> {
                                   fontWeight: FontWeight.bold
                               ),
                             ),
-                            SizedBox(height: 8),
-                            Text(
-                              "${snapshot.data![index].fields.author}",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold
-                              ),
-                            ),
+                            // SizedBox(height: 8),
+                            // Text(
+                            //   "${snapshot.data![index].fields.author}",
+                            //   style: TextStyle(
+                            //       fontSize: 15,
+                            //       fontWeight: FontWeight.bold
+                            //   ),
+                            // ),
                             SizedBox(height: 8),
                             Text(
                               "${snapshot.data![index].fields.createdOn}",

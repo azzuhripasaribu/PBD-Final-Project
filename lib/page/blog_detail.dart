@@ -21,6 +21,7 @@ class _BlogPageState extends State<BlogPage> {
       return Scaffold(
         appBar: AppBar(
           title: const Text('Blog'),
+          backgroundColor: Color.fromARGB(255, 226, 77, 124),
         ),
         drawer: myDrawer(context),
         body: Container(
@@ -47,20 +48,20 @@ class _BlogPageState extends State<BlogPage> {
                         ),
                         children: <TextSpan>[
                           const TextSpan(
-                            text: 'author',
+                            text: 'author:  ',
                             style: TextStyle(fontWeight: FontWeight.bold)),
                           TextSpan(
-                            text: '${widget.myBlog.fields.author}'
+                            text: '${widget.myBlog.fields.author}\n'
                           ),
                           const TextSpan(
-                              text: 'Created On',
+                              text: 'Created On:  ',
                               style: TextStyle(fontWeight: FontWeight.bold)),
                           TextSpan(
-                              text: '${widget.myBlog.fields.createdOn}'
+                              text: '${widget.myBlog.fields.createdOn}\n'
                           ),
                           const TextSpan(
                               text: 'Content',
-                              style: TextStyle(fontSize: 15)),
+                              style: TextStyle(fontSize: 15, height: 1.5)),
                           TextSpan(
                               text: '${widget.myBlog.fields.content}'
                           )
@@ -75,7 +76,7 @@ class _BlogPageState extends State<BlogPage> {
               Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
                 TextButton(
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.blue),
+                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 226, 77, 124),),
                   ),
                     onPressed: () {
                     Navigator.pushReplacement(
