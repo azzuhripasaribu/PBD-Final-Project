@@ -28,8 +28,6 @@ jobs:
         run: flutter --version
       - name: Install dependencies
         run: flutter pub get
-      - name: run tests
-        run: flutter test
       - name: build apk
         run: flutter build apk
       - name: upload APK
