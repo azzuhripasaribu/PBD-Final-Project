@@ -41,6 +41,9 @@ dependencies:
   pbp_django_auth: ^0.3.0
   provider: ^6.0.4
 
+  #send email
+  http: ^0.13.3
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
