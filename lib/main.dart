@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.red,
+        scaffoldBackgroundColor: Color.fromARGB(255, 238, 146, 139)
       ),
       home: FormScreen(),
     );
