@@ -1,3 +1,4 @@
+import 'package:final_project/page/report_form.dart';
 import 'package:final_project/page/start.dart';
 import 'package:final_project/page/centers.dart';
 import 'package:flutter/material.dart';
@@ -66,6 +67,15 @@ Drawer myDrawer(BuildContext context){
             Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => MyBlogPage())
+            );
+          },
+        ),
+        ListTile(
+          title: const Text("Form"),
+          onTap: () {
+            Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => FormScreen())
             );
           },
         )
