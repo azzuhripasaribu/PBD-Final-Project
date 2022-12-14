@@ -1,3 +1,5 @@
+![CI workflows](https://github.com/azzuhripasaribu/PBD-Final-Project/actions/workflows/flutterCI.yaml/badge.svg)
+
 ## Description
 
 In this application we want to bring up the topic that is discussed in the current
