@@ -13,7 +13,6 @@ class EducationPage extends StatelessWidget {
       throw "Can not launch url";
     }
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

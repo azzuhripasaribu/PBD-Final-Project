@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
               primarySwatch: Colors.red,
               scaffoldBackgroundColor: Color.fromARGB(255, 238, 146, 139),
           ),
-          home: FormScreen(),
+          home: StartPage(),
         ));
   }
 }
